@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://b8yfpctd346yn"]
+[gd_scene load_steps=25 format=3 uid="uid://b8yfpctd346yn"]
 
 [ext_resource type="Texture2D" uid="uid://dtruopdn7mir1" path="res://assets/imag/PicsArt_10-04-07.33.17.png" id="1_kiqfx"]
 [ext_resource type="Texture2D" uid="uid://qlwsaw5rk3pu" path="res://assets/Tilesets/Bitmask references 2.png" id="2_teyd7"]
@@ -7,6 +7,15 @@
 [ext_resource type="Texture2D" uid="uid://q5li7fsol3q3" path="res://assets/Tilesets/Water.png" id="5_m3v22"]
 [ext_resource type="Texture2D" uid="uid://we8hwnqg7r5o" path="res://assets/imag/boardBun.png" id="6_6wqyl"]
 [ext_resource type="Texture2D" uid="uid://bvje7g5afj256" path="res://assets/imag/altpatrat.jpg" id="7_netbk"]
+[ext_resource type="Texture2D" uid="uid://difgtfocgi7uc" path="res://assets/imag/games_20241004_225652_0000.png" id="8_g67n6"]
+[ext_resource type="Texture2D" uid="uid://dghf2uc2v41u6" path="res://assets/imag/Moon.png" id="9_ql0c4"]
+[ext_resource type="Texture2D" uid="uid://c7ul3i3u4yins" path="res://assets/imag/Trapped.png" id="10_ek6h1"]
+[ext_resource type="Texture2D" uid="uid://dhbst7844ywb7" path="res://assets/imag/Map.png" id="11_6iibo"]
+[ext_resource type="Texture2D" uid="uid://prjre87gktq3" path="res://assets/imag/Ladder.png" id="12_mnx5q"]
+[ext_resource type="Texture2D" uid="uid://cbrharjf0mxvv" path="res://assets/imag/QuestionMark.png" id="13_1dtiy"]
+[ext_resource type="Texture2D" uid="uid://d0i4147ky81o4" path="res://assets/imag/Rocks.png" id="14_eybdp"]
+[ext_resource type="Texture2D" uid="uid://dmugvsyfk2mec" path="res://assets/imag/Waves.png" id="15_utscx"]
+[ext_resource type="Texture2D" uid="uid://ba7ovp02ytt03" path="res://assets/imag/Wings.png" id="16_hdh2f"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_m4brp"]
 texture = ExtResource("1_kiqfx")
@@ -10203,8 +10212,8 @@ tile_set = SubResource("TileSet_c56vg")
 
 [node name="PicsArt10-04-07_33_17" type="Sprite2D" parent="."]
 show_behind_parent = true
-position = Vector2(2093.77, 1120)
-scale = Vector2(2.31893, 2.21782)
+position = Vector2(2240, 1120)
+scale = Vector2(2.35318, 2.21782)
 texture = ExtResource("6_6wqyl")
 
 [node name="Camera2D" type="Camera2D" parent="."]
@@ -10213,7 +10222,9 @@ enabled = false
 zoom = Vector2(0.2, 0.2)
 position_smoothing_enabled = true
 
-[node name="NinePatchRect" type="NinePatchRect" parent="."]
+[node name="Patch" type="Node2D" parent="."]
+
+[node name="NinePatchRect" type="NinePatchRect" parent="Patch"]
 offset_left = 672.0
 offset_top = 1792.0
 offset_right = 896.0
@@ -10224,7 +10235,7 @@ patch_margin_top = 10
 patch_margin_right = 10
 patch_margin_bottom = 10
 
-[node name="NinePatchRect2" type="NinePatchRect" parent="."]
+[node name="NinePatchRect2" type="NinePatchRect" parent="Patch"]
 offset_left = 672.0
 offset_top = 1568.0
 offset_right = 896.0
@@ -10235,7 +10246,7 @@ patch_margin_top = 10
 patch_margin_right = 10
 patch_margin_bottom = 10
 
-[node name="NinePatchRect3" type="NinePatchRect" parent="."]
+[node name="NinePatchRect3" type="NinePatchRect" parent="Patch"]
 offset_left = 672.0
 offset_top = 1344.0
 offset_right = 896.0
@@ -10246,7 +10257,7 @@ patch_margin_top = 10
 patch_margin_right = 10
 patch_margin_bottom = 10
 
-[node name="NinePatchRect4" type="NinePatchRect" parent="."]
+[node name="NinePatchRect4" type="NinePatchRect" parent="Patch"]
 offset_left = 672.0
 offset_top = 1120.0
 offset_right = 896.0
@@ -10257,7 +10268,7 @@ patch_margin_top = 10
 patch_margin_right = 10
 patch_margin_bottom = 10
 
-[node name="NinePatchRect5" type="NinePatchRect" parent="."]
+[node name="NinePatchRect5" type="NinePatchRect" parent="Patch"]
 offset_left = 672.0
 offset_top = 896.0
 offset_right = 896.0
@@ -10268,7 +10279,7 @@ patch_margin_top = 10
 patch_margin_right = 10
 patch_margin_bottom = 10
 
-[node name="NinePatchRect6" type="NinePatchRect" parent="."]
+[node name="NinePatchRect6" type="NinePatchRect" parent="Patch"]
 offset_left = 672.0
 offset_top = 672.0
 offset_right = 896.0
@@ -10279,7 +10290,7 @@ patch_margin_top = 10
 patch_margin_right = 10
 patch_margin_bottom = 10
 
-[node name="NinePatchRect7" type="NinePatchRect" parent="."]
+[node name="NinePatchRect7" type="NinePatchRect" parent="Patch"]
 offset_left = 672.0
 offset_top = 448.0
 offset_right = 896.0
@@ -10290,7 +10301,7 @@ patch_margin_top = 10
 patch_margin_right = 10
 patch_margin_bottom = 10
 
-[node name="NinePatchRect21" type="NinePatchRect" parent="."]
+[node name="NinePatchRect21" type="NinePatchRect" parent="Patch"]
 offset_left = 3360.0
 offset_top = 1792.0
 offset_right = 3584.0
@@ -10301,7 +10312,7 @@ patch_margin_top = 10
 patch_margin_right = 10
 patch_margin_bottom = 10
 
-[node name="NinePatchRect22" type="NinePatchRect" parent="."]
+[node name="NinePatchRect22" type="NinePatchRect" parent="Patch"]
 offset_left = 3360.0
 offset_top = 1568.0
 offset_right = 3584.0
@@ -10312,7 +10323,7 @@ patch_margin_top = 10
 patch_margin_right = 10
 patch_margin_bottom = 10
 
-[node name="NinePatchRect23" type="NinePatchRect" parent="."]
+[node name="NinePatchRect23" type="NinePatchRect" parent="Patch"]
 offset_left = 3360.0
 offset_top = 1344.0
 offset_right = 3584.0
@@ -10323,7 +10334,7 @@ patch_margin_top = 10
 patch_margin_right = 10
 patch_margin_bottom = 10
 
-[node name="NinePatchRect24" type="NinePatchRect" parent="."]
+[node name="NinePatchRect24" type="NinePatchRect" parent="Patch"]
 offset_left = 3360.0
 offset_top = 1120.0
 offset_right = 3584.0
@@ -10334,7 +10345,7 @@ patch_margin_top = 10
 patch_margin_right = 10
 patch_margin_bottom = 10
 
-[node name="NinePatchRect25" type="NinePatchRect" parent="."]
+[node name="NinePatchRect25" type="NinePatchRect" parent="Patch"]
 offset_left = 3360.0
 offset_top = 896.0
 offset_right = 3584.0
@@ -10345,7 +10356,7 @@ patch_margin_top = 10
 patch_margin_right = 10
 patch_margin_bottom = 10
 
-[node name="NinePatchRect26" type="NinePatchRect" parent="."]
+[node name="NinePatchRect26" type="NinePatchRect" parent="Patch"]
 offset_left = 3360.0
 offset_top = 672.0
 offset_right = 3584.0
@@ -10356,7 +10367,7 @@ patch_margin_top = 10
 patch_margin_right = 10
 patch_margin_bottom = 10
 
-[node name="NinePatchRect27" type="NinePatchRect" parent="."]
+[node name="NinePatchRect27" type="NinePatchRect" parent="Patch"]
 offset_left = 3360.0
 offset_top = 448.0
 offset_right = 3584.0
@@ -10367,7 +10378,7 @@ patch_margin_top = 10
 patch_margin_right = 10
 patch_margin_bottom = 10
 
-[node name="NinePatchRect8" type="NinePatchRect" parent="."]
+[node name="NinePatchRect8" type="NinePatchRect" parent="Patch"]
 offset_left = 672.0
 offset_top = 224.0
 offset_right = 896.0
@@ -10378,7 +10389,7 @@ patch_margin_top = 10
 patch_margin_right = 10
 patch_margin_bottom = 10
 
-[node name="NinePatchRect9" type="NinePatchRect" parent="."]
+[node name="NinePatchRect9" type="NinePatchRect" parent="Patch"]
 offset_left = 896.0
 offset_top = 224.0
 offset_right = 1120.0
@@ -10389,7 +10400,7 @@ patch_margin_top = 10
 patch_margin_right = 10
 patch_margin_bottom = 10
 
-[node name="NinePatchRect10" type="NinePatchRect" parent="."]
+[node name="NinePatchRect10" type="NinePatchRect" parent="Patch"]
 offset_left = 1120.0
 offset_top = 224.0
 offset_right = 1344.0
@@ -10400,7 +10411,7 @@ patch_margin_top = 10
 patch_margin_right = 10
 patch_margin_bottom = 10
 
-[node name="NinePatchRect11" type="NinePatchRect" parent="."]
+[node name="NinePatchRect11" type="NinePatchRect" parent="Patch"]
 offset_left = 1344.0
 offset_top = 224.0
 offset_right = 1568.0
@@ -10411,7 +10422,7 @@ patch_margin_top = 10
 patch_margin_right = 10
 patch_margin_bottom = 10
 
-[node name="NinePatchRect12" type="NinePatchRect" parent="."]
+[node name="NinePatchRect12" type="NinePatchRect" parent="Patch"]
 offset_left = 1568.0
 offset_top = 224.0
 offset_right = 1792.0
@@ -10422,7 +10433,7 @@ patch_margin_top = 10
 patch_margin_right = 10
 patch_margin_bottom = 10
 
-[node name="NinePatchRect13" type="NinePatchRect" parent="."]
+[node name="NinePatchRect13" type="NinePatchRect" parent="Patch"]
 offset_left = 1792.0
 offset_top = 224.0
 offset_right = 2016.0
@@ -10433,7 +10444,7 @@ patch_margin_top = 10
 patch_margin_right = 10
 patch_margin_bottom = 10
 
-[node name="NinePatchRect14" type="NinePatchRect" parent="."]
+[node name="NinePatchRect14" type="NinePatchRect" parent="Patch"]
 offset_left = 2016.0
 offset_top = 224.0
 offset_right = 2240.0
@@ -10444,7 +10455,7 @@ patch_margin_top = 10
 patch_margin_right = 10
 patch_margin_bottom = 10
 
-[node name="NinePatchRect15" type="NinePatchRect" parent="."]
+[node name="NinePatchRect15" type="NinePatchRect" parent="Patch"]
 offset_left = 2240.0
 offset_top = 224.0
 offset_right = 2464.0
@@ -10455,7 +10466,7 @@ patch_margin_top = 10
 patch_margin_right = 10
 patch_margin_bottom = 10
 
-[node name="NinePatchRect16" type="NinePatchRect" parent="."]
+[node name="NinePatchRect16" type="NinePatchRect" parent="Patch"]
 offset_left = 2464.0
 offset_top = 224.0
 offset_right = 2688.0
@@ -10466,7 +10477,7 @@ patch_margin_top = 10
 patch_margin_right = 10
 patch_margin_bottom = 10
 
-[node name="NinePatchRect17" type="NinePatchRect" parent="."]
+[node name="NinePatchRect17" type="NinePatchRect" parent="Patch"]
 offset_left = 2688.0
 offset_top = 224.0
 offset_right = 2912.0
@@ -10477,7 +10488,7 @@ patch_margin_top = 10
 patch_margin_right = 10
 patch_margin_bottom = 10
 
-[node name="NinePatchRect18" type="NinePatchRect" parent="."]
+[node name="NinePatchRect18" type="NinePatchRect" parent="Patch"]
 offset_left = 2912.0
 offset_top = 224.0
 offset_right = 3136.0
@@ -10488,7 +10499,7 @@ patch_margin_top = 10
 patch_margin_right = 10
 patch_margin_bottom = 10
 
-[node name="NinePatchRect28" type="NinePatchRect" parent="."]
+[node name="NinePatchRect28" type="NinePatchRect" parent="Patch"]
 offset_left = 896.0
 offset_top = 1792.0
 offset_right = 1120.0
@@ -10499,7 +10510,7 @@ patch_margin_top = 10
 patch_margin_right = 10
 patch_margin_bottom = 10
 
-[node name="NinePatchRect29" type="NinePatchRect" parent="."]
+[node name="NinePatchRect29" type="NinePatchRect" parent="Patch"]
 offset_left = 1120.0
 offset_top = 1792.0
 offset_right = 1344.0
@@ -10510,7 +10521,7 @@ patch_margin_top = 10
 patch_margin_right = 10
 patch_margin_bottom = 10
 
-[node name="NinePatchRect30" type="NinePatchRect" parent="."]
+[node name="NinePatchRect30" type="NinePatchRect" parent="Patch"]
 offset_left = 1344.0
 offset_top = 1792.0
 offset_right = 1568.0
@@ -10521,7 +10532,7 @@ patch_margin_top = 10
 patch_margin_right = 10
 patch_margin_bottom = 10
 
-[node name="NinePatchRect31" type="NinePatchRect" parent="."]
+[node name="NinePatchRect31" type="NinePatchRect" parent="Patch"]
 offset_left = 1568.0
 offset_top = 1792.0
 offset_right = 1792.0
@@ -10532,7 +10543,7 @@ patch_margin_top = 10
 patch_margin_right = 10
 patch_margin_bottom = 10
 
-[node name="NinePatchRect32" type="NinePatchRect" parent="."]
+[node name="NinePatchRect32" type="NinePatchRect" parent="Patch"]
 offset_left = 1792.0
 offset_top = 1792.0
 offset_right = 2016.0
@@ -10543,7 +10554,7 @@ patch_margin_top = 10
 patch_margin_right = 10
 patch_margin_bottom = 10
 
-[node name="NinePatchRect33" type="NinePatchRect" parent="."]
+[node name="NinePatchRect33" type="NinePatchRect" parent="Patch"]
 offset_left = 2016.0
 offset_top = 1792.0
 offset_right = 2240.0
@@ -10554,7 +10565,7 @@ patch_margin_top = 10
 patch_margin_right = 10
 patch_margin_bottom = 10
 
-[node name="NinePatchRect34" type="NinePatchRect" parent="."]
+[node name="NinePatchRect34" type="NinePatchRect" parent="Patch"]
 offset_left = 2240.0
 offset_top = 1792.0
 offset_right = 2464.0
@@ -10565,7 +10576,7 @@ patch_margin_top = 10
 patch_margin_right = 10
 patch_margin_bottom = 10
 
-[node name="NinePatchRect35" type="NinePatchRect" parent="."]
+[node name="NinePatchRect35" type="NinePatchRect" parent="Patch"]
 offset_left = 2464.0
 offset_top = 1792.0
 offset_right = 2688.0
@@ -10576,7 +10587,7 @@ patch_margin_top = 10
 patch_margin_right = 10
 patch_margin_bottom = 10
 
-[node name="NinePatchRect36" type="NinePatchRect" parent="."]
+[node name="NinePatchRect36" type="NinePatchRect" parent="Patch"]
 offset_left = 2688.0
 offset_top = 1792.0
 offset_right = 2912.0
@@ -10587,7 +10598,7 @@ patch_margin_top = 10
 patch_margin_right = 10
 patch_margin_bottom = 10
 
-[node name="NinePatchRect37" type="NinePatchRect" parent="."]
+[node name="NinePatchRect37" type="NinePatchRect" parent="Patch"]
 offset_left = 2912.0
 offset_top = 1792.0
 offset_right = 3136.0
@@ -10598,7 +10609,7 @@ patch_margin_top = 10
 patch_margin_right = 10
 patch_margin_bottom = 10
 
-[node name="NinePatchRect38" type="NinePatchRect" parent="."]
+[node name="NinePatchRect38" type="NinePatchRect" parent="Patch"]
 offset_left = 3136.0
 offset_top = 1792.0
 offset_right = 3360.0
@@ -10609,7 +10620,7 @@ patch_margin_top = 10
 patch_margin_right = 10
 patch_margin_bottom = 10
 
-[node name="NinePatchRect19" type="NinePatchRect" parent="."]
+[node name="NinePatchRect19" type="NinePatchRect" parent="Patch"]
 offset_left = 3136.0
 offset_top = 224.0
 offset_right = 3360.0
@@ -10620,7 +10631,7 @@ patch_margin_top = 10
 patch_margin_right = 10
 patch_margin_bottom = 10
 
-[node name="NinePatchRect20" type="NinePatchRect" parent="."]
+[node name="NinePatchRect20" type="NinePatchRect" parent="Patch"]
 offset_left = 3360.0
 offset_top = 224.0
 offset_right = 3584.0
@@ -10630,3 +10641,103 @@ patch_margin_left = 10
 patch_margin_top = 10
 patch_margin_right = 10
 patch_margin_bottom = 10
+
+[node name="Games202410042256520000" type="Sprite2D" parent="."]
+position = Vector2(3471.55, 1904)
+scale = Vector2(0.231137, 0.232365)
+texture = ExtResource("8_g67n6")
+
+[node name="Moon" type="Sprite2D" parent="."]
+position = Vector2(672, 1120)
+scale = Vector2(0.232444, 0.23431)
+texture = ExtResource("9_ql0c4")
+centered = false
+
+[node name="Trapped" type="Sprite2D" parent="."]
+position = Vector2(1792, 1792)
+scale = Vector2(0.235789, 0.235789)
+texture = ExtResource("10_ek6h1")
+centered = false
+
+[node name="Trapped" type="Sprite2D" parent="Trapped"]
+position = Vector2(-4750, -4750)
+scale = Vector2(1, 1.01538)
+texture = ExtResource("10_ek6h1")
+centered = false
+
+[node name="Trapped2" type="Sprite2D" parent="Trapped"]
+position = Vector2(6650, -2850)
+scale = Vector2(1, 1)
+texture = ExtResource("10_ek6h1")
+centered = false
+
+[node name="Trapped3" type="Sprite2D" parent="Trapped"]
+position = Vector2(1900, -6650)
+scale = Vector2(1, 1)
+texture = ExtResource("10_ek6h1")
+centered = false
+
+[node name="Map" type="Sprite2D" parent="Trapped"]
+position = Vector2(-2850, -0.000610352)
+texture = ExtResource("11_6iibo")
+centered = false
+
+[node name="Ladder" type="Sprite2D" parent="Trapped"]
+position = Vector2(4750, -6650)
+texture = ExtResource("12_mnx5q")
+centered = false
+
+[node name="QuestionMark" type="Sprite2D" parent="Trapped"]
+position = Vector2(4750, -0.000671387)
+texture = ExtResource("13_1dtiy")
+centered = false
+
+[node name="QuestionMark2" type="Sprite2D" parent="Trapped"]
+position = Vector2(1900, -0.000671387)
+texture = ExtResource("13_1dtiy")
+centered = false
+
+[node name="QuestionMark3" type="Sprite2D" parent="Trapped"]
+position = Vector2(6650, -1900)
+texture = ExtResource("13_1dtiy")
+centered = false
+
+[node name="QuestionMark4" type="Sprite2D" parent="Trapped"]
+position = Vector2(5700, -6650)
+texture = ExtResource("13_1dtiy")
+centered = false
+
+[node name="QuestionMark5" type="Sprite2D" parent="Trapped"]
+position = Vector2(2850, -6650)
+texture = ExtResource("13_1dtiy")
+centered = false
+
+[node name="QuestionMark6" type="Sprite2D" parent="Trapped"]
+position = Vector2(-4750, -950)
+texture = ExtResource("13_1dtiy")
+centered = false
+
+[node name="QuestionMark7" type="Sprite2D" parent="Trapped"]
+position = Vector2(-4750, -5700)
+texture = ExtResource("13_1dtiy")
+centered = false
+
+[node name="QuestionMark8" type="Sprite2D" parent="Trapped"]
+position = Vector2(-1900, -6650)
+texture = ExtResource("13_1dtiy")
+centered = false
+
+[node name="Rocks" type="Sprite2D" parent="Trapped"]
+position = Vector2(6650, -4750)
+texture = ExtResource("14_eybdp")
+centered = false
+
+[node name="Waves" type="Sprite2D" parent="Trapped"]
+position = Vector2(2850, -0.000610352)
+texture = ExtResource("15_utscx")
+centered = false
+
+[node name="Wings" type="Sprite2D" parent="Trapped"]
+position = Vector2(-0.000488281, -6650)
+texture = ExtResource("16_hdh2f")
+centered = false
